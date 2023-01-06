@@ -297,6 +297,10 @@ body{
 
 
  }
+ .home-info h3{
+   font-family: 'roboto';
+   text-transform: uppercase;
+ }
 
  .home-img::after{
    content: "";
@@ -354,18 +358,21 @@ h3.my-profession {
  }
 
  .about .about-content .about-text h3{
-        font-size:24px;
+       font-size: 35px;
         margin-bottom:40px;
         font-weight:700;
         color:var(--text-black-900);
+        text-transform: capitalize;
  }
  .about .about-content .about-text h3 span{
    color:var(--skin-color);
  }
  .about .about-content .about-text p{
-   font-size:16px;
-   line-height: 25px;
+   font-size:22px;
+   text-transform: capitalize;
+   line-height: 1.8;
    color:var(--text-black-700);
+   margin-left:-10px;
  }
 .about .about-content .personal-info{
    flex: 0 0 60%;
@@ -656,7 +663,7 @@ text-transform: capitalize;
       filter: grayscale(100%);
       animation: nonHover 0.5s ease-out forwards;
    }
-   img:hover {
+    img:hover {
       cursor: pointer;
       -webkit-filter: grayscale(0);
       filter: grayscale(0);
@@ -940,8 +947,8 @@ h1.text-skills {
  }
  
   .skills-section img {
-   width: 82%;
-   margin: 0 auto;
+   width: 62%;
+   margin: 10px 25px 10px 25px;;
    background: transparent;
    animation: rotate 18s ease-in-out 1s infinite alternate-reverse;
    -webkit-animation: rotate 18s ease-in-out 1s infinite alternate-reverse;
