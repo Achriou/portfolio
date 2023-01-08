@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Open+Sans:ital,wght@0,300;0,400;1,600&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,500&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,900&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css">
 </head>
 <body class="dark">
 <!-- Main Container -->
@@ -75,7 +75,8 @@
         </section>
         <!-- Home section start -->
        <!-- About -->
-       <section id="about" class="about section">
+       
+       <div data-aos="fade-up" id="about" class="about section">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -153,6 +154,7 @@
                </div>
              </div>
             </div>
+          
             <div class="row">
               <div class="education padd-15">
                 <h3 class="title">Education</h3>
@@ -265,7 +267,9 @@
         </div>
       </div>
       </div>
+    
       </section>
+      
       <!--  -->
        <!-- End About section-->
         <!-- Service section start -->
@@ -360,7 +364,12 @@
                 <div class="portfolio-item padd-15">
                    <div class="portfolio-item-inner shadow-dark">
                      <div class="portfolio-img">
-                      <img src="./assets/img/find-me.png" width="100%" alt="">
+                      <img src="./assets/img/find-me.png" width="500px" alt="">
+                     </div>
+                     <div class="text">
+                      <h4>Find Me</h4>
+                      <p>Find me is my first dynamic project made during my training at interface3. The website was made with PHP, MySql for the backend and JavaScript, HTML and CSS for the frontend. The idea of Find me is to help the user to find a movie by answering three questions.
+                         The user will receive a selection of films based on the answers given.</p>
                      </div>
                     </div> 
                     <div class="buton"> 
@@ -377,8 +386,13 @@
                 <div class="portfolio-item padd-15">
                    <div class="portfolio-item-inner shadow-dark">
                      <div class="portfolio-img">
-                      <img src="./assets/img/Capture d’écran 2022-12-30 191258.png" width="100%" alt="">
+                      <img src="./assets/img/Capture d’écran 2022-12-30 191258.png" width="500px" alt="">
                     
+                     </div>
+                     <div class="text">
+                      <h4>PROJECT WITH ILLUSTRATOR</h4>
+                      <p>Design a postal card for Interface3 while on summer holidays and as I had so much fun, I drew another one.
+                        Done with Adobe Illustrator.</p>
                      </div>
                    </div>
                    <div class="buton"> 
@@ -396,7 +410,11 @@
                 <div class="portfolio-item padd-15">
                    <div class="portfolio-item-inner shadow-dark">
                      <div class="portfolio-img">
-                      <video data-aos="fade-left" class="col-xs-12 col-sm-6 col-md-8 col-lg-8 aos-init aos-animate" autoplay="" loop="" muted="" width="100%" src="./assets/video/matching_game.mp4"></video>
+                      <video data-aos="fade-left" class="col-xs-12 col-sm-6 col-md-8 col-lg-8 aos-init aos-animate" autoplay="" loop="" muted="" width="500px" src="./assets/video/matching_game.mp4"></video>
+                     </div>
+                     <div class="text">
+                      <h4>Matching Code Game</h4>
+                      <p>Matching code game is a card memory game that was made in a group in two days during the hackathon 2022 which had for theme "coding and decoding". Matching game is a site that allows you to learn the basics of programming with PHP and HTML/CSS. The principle is simple: match the cards befoire the timer runs out!</p>
                      </div>
                    </div>
                    <div class="buton"> 
@@ -424,6 +442,7 @@
         <!-- portfolio End -->
         <!-- Contact start -->
           <section id="contact" class="contact section">
+           
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -473,7 +492,7 @@
                 <P>Achriou</p>
               </div>
               <!-- Contact info item end-->
-
+            
             </div>
             <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
             <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
@@ -541,7 +560,17 @@
 </div>
  <!-- style switecher end -->
  <!-- JS Files -->
+ <script>
+  $(document).on('ready', function () {
+    // initialization of aos
+    AOS.init({
+      duration: 650,
+      once: true
+    });
+  });
+</script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/style-switcher.js"></script>
+    <script src="../../assets/vendor/aos/dist/aos.js"></script>
 </body>
 </html>

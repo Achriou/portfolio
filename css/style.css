@@ -251,7 +251,7 @@ body{
     display: flex;
  }
  .aside .nav li a{
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
   display:block;
   padding:5px 15px;
@@ -623,10 +623,11 @@ text-transform: capitalize;
    width:100%;
    display:block;
 }
+
 .btn {
    position: relative;
-   width: 250px;
-   height: 80px;
+   width: 195px;
+   height: 58px;
    display: grid;
    place-items: center;
    background: var(--skin-color);
@@ -641,8 +642,27 @@ text-transform: capitalize;
    padding-left: 60px;
    overflow: hidden;
    transition: 0.5s ease-in-out;
+   margin-top: 15px;
  }
+.portfolio-item-inner{
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+}
+.text{
+   top: 5%;
+  
+   left: 98%;
+}
+.text h4{
+   margin-top: 27px;
+}
 
+.text p{
+   font-size: 18px;
+   line-height: 1.8;
+   ;
+}
    .portfolio-img {
       border: 2px solid #000;
       border-radius: 10px;
@@ -650,7 +670,7 @@ text-transform: capitalize;
       padding: 20px;
       box-shadow: 15px 15px 20px 5px #000;
       width: 600px;
-   
+      
       display: grid;
       /* 	grid-gap: 5px; */
       grid-template-columns: 300px 300px;
@@ -834,6 +854,17 @@ font-weight: 400;
    margin-left:20%;
 
 }
+@media (max-width:767px){
+   #services h2::before {
+      content: '';
+      height: 4px;
+      width: 50px;
+      background-color: var(--skin-color);
+      position: absolute;
+      top: 18%;
+      left: 2%;
+  }
+}
 @media (max-width:1199px){
    .aside{
       left:-270px;
@@ -868,6 +899,36 @@ font-weight: 400;
    .home .home-info{
       flex:  0 0 100%;
       max-width:100%;
+   }
+}
+@media (max-width:767px){
+   .portfolio .portfolio-item,
+   .portfolio-img{
+      width:500px;
+      text-align: center;
+      border:none;
+      padding:0;
+      margin:0;
+      flex:0 0 50%;
+      max-width: 0%;
+      display: flex;
+      flex-direction: column;
+    
+      
+   }
+   .portfolio .portfolio-item,
+    .portfolio-img video{
+      text-align: center;
+    }
+   .text{
+      display: none;
+   }
+   .btn{
+      display:none;
+   }
+   section{
+      min-width: none;
+      min-height: 0%;
    }
 }
 @media (max-width:767px){
@@ -954,6 +1015,7 @@ h1.text-skills {
    -webkit-animation: rotate 18s ease-in-out 1s infinite alternate-reverse;
    -o-animation: rotate 18s ease-in-out 1s infinite alternate-reverse;
  }
+
  #portfolio .btn-hire-me a{
    color:white;
  }
