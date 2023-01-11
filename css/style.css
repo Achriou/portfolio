@@ -90,6 +90,10 @@ body{
   
    margin:auto;
  }
+ button a{
+   color:white;
+   text-align: center;
+ }
  .section-title h2{
    font-size:30px;
    font-family: 'roboto';
@@ -281,10 +285,10 @@ body{
  }
 
  .home .home-img img{
- height:400px;
+ height:300px;
  position: relative;
  transform:translate(-50%);
- transition:bottom 1s, left 3s;
+ /* transition:bottom 1s, left 3s; */
 
  }
 
@@ -309,8 +313,8 @@ body{
    width:80px;
    border-bottom:10px solid var(--skin-color);
    border-right: 10px solid var(--skin-color);
-   right:50px;
-   bottom:-10px;
+   right: 110px;
+   bottom: -13px;
  }
  .home-img::before{
    content: "";
@@ -319,8 +323,8 @@ body{
    width:80px;
    border-top:10px solid var(--skin-color);
    border-left: 10px solid var(--skin-color);
-   left:-150px;
-   top:150px;
+   left: -169px;
+   top: 62px;
  }
  h3 .hello{
    font-size:28px;
@@ -683,7 +687,7 @@ text-transform: capitalize;
       filter: grayscale(100%);
       animation: nonHover 0.5s ease-out forwards;
    }
-    img:hover {
+    .img:hover {
       cursor: pointer;
       -webkit-filter: grayscale(0);
       filter: grayscale(0);
